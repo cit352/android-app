@@ -5,4 +5,8 @@
     <string name="or">or</string>
     <string name="button">Button</string>
     <string name="sign_in_tap">SIGN IN</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="title_activity_unlockstart">Unlockstart</string>
 </resources>
