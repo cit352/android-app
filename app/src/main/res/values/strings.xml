@@ -9,4 +9,5 @@
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="title_activity_unlockstart">Unlockstart</string>
+    <string name="swipe_your_finger_here">Swipe your finger here</string>
 </resources>

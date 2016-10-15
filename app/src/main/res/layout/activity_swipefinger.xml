@@ -14,8 +14,8 @@
 
 
     <TextView
-        android:text="Swipe your finger here"
-        android:textSize="30dp"
+        android:text="@string/swipe_your_finger_here"
+        android:textSize="30sp"
         android:textColor="#424242"
         android:textStyle="bold"
         android:layout_width="wrap_content"
