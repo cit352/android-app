@@ -12,6 +12,12 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+// For working with database
+import android.util.Log;
+import java.util.List;
+import com.example.pete.myapplication.business.*;
+import com.example.pete.myapplication.database.*;
+
 public class MainActivity extends AppCompatActivity {
 
     public Button sign_in_tap;

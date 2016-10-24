@@ -6,6 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// For working with database
+import android.util.Log;
+import java.util.List;
+import com.example.pete.myapplication.business.*;
+import com.example.pete.myapplication.database.*;
+
 public class login extends AppCompatActivity {
 
     public Button enter_app;
