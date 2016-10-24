@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// For working with database
+import android.util.Log;
+import java.util.List;
+import com.example.pete.myapplication.business.*;
+import com.example.pete.myapplication.database.*;
+
+
 public class unlockstart extends AppCompatActivity {
     public Button unlock1;
 
@@ -15,7 +22,7 @@ public class unlockstart extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent toy = new Intent (unlockstart.this,swipefinger.class) ;
+                Intent toy = new Intent (unlockstart.this, ScanFinger.class) ;
                 startActivity(toy);
             }
         });
@@ -29,7 +36,7 @@ public class unlockstart extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent boat = new Intent (unlockstart.this,swipefinger.class) ;
+                Intent boat = new Intent (unlockstart.this, ScanFinger.class) ;
                 startActivity(boat);
             }
         });

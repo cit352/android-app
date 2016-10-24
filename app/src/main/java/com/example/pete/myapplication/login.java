@@ -6,6 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// For working with database
+import android.util.Log;
+import java.util.List;
+import com.example.pete.myapplication.business.*;
+import com.example.pete.myapplication.database.*;
+
 public class login extends AppCompatActivity {
 
     public Button enter_app;
@@ -16,7 +22,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent tin = new Intent (login.this,unlockstart.class) ;
+                Intent tin = new Intent (login.this, unlockstart.class) ;
                 startActivity(tin);
 
 
@@ -31,7 +37,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
-        getSupportActionBar().setHomeButtonEnabled(true);//this makes back button go back to home
+        getSupportActionBar().setHomeButtonEnabled(true); //this makes back button go back to home
     }
 }
 

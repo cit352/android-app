@@ -12,7 +12,13 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class MainActivity extends AppCompatActivity {
+// For working with database
+import android.util.Log;
+import java.util.List;
+import com.example.pete.myapplication.business.*;
+import com.example.pete.myapplication.database.*;
+
+public class Register extends AppCompatActivity {
 
     public Button sign_in_tap;
     /**
@@ -28,21 +34,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent page = new Intent(MainActivity.this, login.class);
+                Intent page = new Intent(Register.this, login.class);
 
                 startActivity(page);
 
             }
         });
-
-
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
         signinpage();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
