@@ -18,7 +18,7 @@ import java.util.List;
 import com.example.pete.myapplication.business.*;
 import com.example.pete.myapplication.database.*;
 
-public class Register extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     public Button sign_in_tap;
     /**
@@ -34,19 +34,21 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent page = new Intent(Register.this, login.class);
+                Intent page = new Intent(MainActivity.this, login.class);
 
                 startActivity(page);
 
             }
         });
+
+
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_main);
         signinpage();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.

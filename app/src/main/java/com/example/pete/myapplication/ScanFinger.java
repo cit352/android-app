@@ -9,7 +9,6 @@ import java.util.List;
 import com.example.pete.myapplication.business.*;
 import com.example.pete.myapplication.database.*;
 
-
 public class ScanFinger extends AppCompatActivity {
 
     @Override
