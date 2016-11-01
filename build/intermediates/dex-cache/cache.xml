@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.6.1_46ef7d70f6abe9f7570abb51e525258e7497e8c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_89f4f12b9feac925e82b2371d575dd47fc0eda59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_dc8e4128dedffdb3621d21b4818d3fc9043b4190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.6.1_b097c98195c66914d2deec3065d5e79f63005d97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_8a493f3c5f05b36109396bb2e3d9611652e75c1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha9\constraint-layout-solver-1.0.0-alpha9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6a908fd0803cc5f65b007101002aec06dc7544da">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-alpha9_6a8f0ee567f88693059abc136b8cc7d7da9f5c24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_3867d9e516a03f207f1c32dfe7236a3e66d0baea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_df89c8b24ba0f05b5ae4cd79805d1a1cfcbdf8d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_62edbfdb4778b3eb97f07f7b31c7a3ec1aafca8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4e6470fe5081bd76bb727ea9d0d9de373ac5940b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-24.2.1_955576e3208e58eef332a1e3e78f9ee10c47101b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_0fac64a8bab5c6261f6c50f6067efa4e5606a36f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_7a4f81161429cca4a9948ffc2df090bb819dc8dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-alpha9_1e8fad26994a8b8c82cb15d228611a61c58dc8f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_418cdd613f19bf8a282d49711e53bf5d3efc2cc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_b9fdcf9cf515fff164f504871b457bbf8f90eb0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_06f4d17d5b39843ac95e452fa0c4d4b3deb13300.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_49114c6857ecda5aaca634132338ac7d31badf2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4e6470fe5081bd76bb727ea9d0d9de373ac5940b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-24.2.1_cafcc2ddbc07075e9590cddad7a188788d5df015.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2706ff1e802363b93a3a17a2f61d5c8b9e44d3d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_5fe90e285c39ed2816838236c63c117d0ef5a504.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_3c3481413bb6d8f5c771f0eff70014c7852612e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2934036dc158de1518642d9a241a5fdae96b032b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_f97022d953d393da5cd3129a276c7d5aa8bd80b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_a9852f0a0e51f9529388c0134dfca00b35fc5f76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cc17fff45e8a9cccbef677da058c6632e604685f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.6.1_1aeefb18dc83d21e12fe8221f009606d0360faef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_a979a3e4eac96653ce784ddafe36a303030bfa0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_258802816a380f41653d5034b90ffa91171bdf30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_0fb6d807ff2a2ec8e048b0463f80820c321349d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_f256da593bd3f58c2c02f80713c859c252441a45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_26e629b556e219d288779bd862b2522120875c2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-alpha9_cb850b2c160cd87eaf828c4aaee79fbec31579ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_fffcc13e1b4380e2b93c671aa2849f222a1eb456.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_15e03fcf66a604f12533542fd30ae9caac9f2ad8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_aaebbfb95c1146705c96ba22b14ad05d6b4dd118.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_759f783dd91ad1f681b7b5fdcd824b94796181e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_8c6c03c0cc15dea16c9900ce21936c773bb188d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_63f4a088c332a1d39782dd7bf3194f6bce486c8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_98643fe2b59c9161ebd869d70ab80e6d81a328d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_ee7a71ecfcc7336fbf6bff882854abbea26451fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_db2914161275e9791aa049877f80c0c2d434e7ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_8538b419619a78a6f57d408492e87ad20d65599b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_655429e93617b165c5a5cbc46f4821370b82a800.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ba0140fd61806f7567950b8ad69dcfbaa87b0eac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a87a83a3b9c6a765652582691d7ea1b320296baf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_8616a74b19cef44e45d87c82a427743d85bf77ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.6.1_e88f48416779072c2bb5c8baf56f5d9d740c8f2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\apy75\AndroidStudioProjects\CIT 352 main project\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_fa1eb52e013c75acb32bdc02c1020f1a8bf7d3a8.jar" />
+    </item>
+
+</items>
