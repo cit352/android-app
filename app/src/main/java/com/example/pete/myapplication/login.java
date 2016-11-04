@@ -24,7 +24,9 @@ public class login extends AppCompatActivity {
 
                 Intent tin = new Intent (login.this, unlockstart.class) ;
                 startActivity(tin);
-
+                DBHandler db = new DBHanlder();
+                db.onCreate();
+                db.getUserInfo
 
             }
         });
