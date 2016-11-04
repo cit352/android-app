@@ -22,10 +22,11 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent tin = new Intent (login.this,unlockstart.class) ;
+                Intent tin = new Intent (login.this, unlockstart.class) ;
                 startActivity(tin);
-
-
+                //DBHandler db = new DBHandler();
+                //db.onCreate();
+                //db.getUserInfo()';
             }
         });
 
@@ -37,7 +38,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
-        getSupportActionBar().setHomeButtonEnabled(true);//this makes back button go back to home
+        getSupportActionBar().setHomeButtonEnabled(true); //this makes back button go back to home
     }
 }
 
