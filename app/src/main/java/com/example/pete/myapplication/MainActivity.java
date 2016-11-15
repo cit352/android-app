@@ -14,9 +14,14 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 // For working with database
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import java.util.List;
 import com.example.pete.myapplication.business.*;
 import com.example.pete.myapplication.database.*;
+
+import static com.example.pete.myapplication.R.id.email_input;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,19 +33,38 @@ public class MainActivity extends AppCompatActivity {
     private GoogleApiClient client;
 
     public void signinpage() {
-        sign_in_tap = (Button) findViewById(R.id.sign_in_tap);
+        sign_in_tap = (Button) findViewById(R.id.sign_up_tap);
 
         sign_in_tap.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-                Intent page = new Intent(MainActivity.this, login.class);
+                EditText usernameEditText = null;
+                EditText passwordEditText = null;
+                boolean usernameEntered = false;
+                boolean passwordEntered = false;
 
-                startActivity(page);
+                usernameEditText = (EditText) findViewById(R.id.email_input);
+                passwordEditText = (EditText) findViewById(R.id.pass_input);
+                if (isEmpty(usernameEditText)) {
+                    usernameEditText.setError("You must enter a username");
+                }
+                else
+                    usernameEntered = true;
 
+                if (isEmpty(passwordEditText)) {
+                    passwordEditText.setError("You must enter a password");
+                }
+                else
+                    passwordEntered = true;
+
+                if(usernameEntered && passwordEntered) {
+                    Intent page = new Intent(MainActivity.this, login.class);
+                    startActivity(page);
+                }
             }
         });
-
 
     }
 
@@ -49,11 +73,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button buttonSignUp = (Button) findViewById(R.id.sign_up_tap);
         signinpage();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
+    public boolean isEmpty(EditText et)
+    {
+        String s = et.getText().toString();
+
+        if (s.matches(""))
+        {
+            return true;
+        }
+        return false;
+    }
+
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
