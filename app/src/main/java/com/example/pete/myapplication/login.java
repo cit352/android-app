@@ -18,6 +18,17 @@ public class login extends AppCompatActivity {
 
     public Button loginButton;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        DBHandler db = new DBHandler(this);
+
+        login();
+        getSupportActionBar().setHomeButtonEnabled(true); //this makes back button go back to home
+    }
+
     public void login(){
         loginButton = (Button)findViewById(R.id.enter_app);
 
@@ -55,15 +66,6 @@ public class login extends AppCompatActivity {
 
 
     }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        login();
-        getSupportActionBar().setHomeButtonEnabled(true); //this makes back button go back to home
-    }
-
 
     public boolean isEmpty(EditText et)
     {

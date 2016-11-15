@@ -33,15 +33,29 @@ public class MainActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        signUpPage();
+        signInPage();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+    }
 
     public void signUpPage() {
         signUpButton = (Button) findViewById(R.id.sign_up_tap);
+
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
+                DBHandler db = new DBHandler(this);
                 EditText usernameSignUpEditText = null;
                 EditText passwordSignUpEditText = null;
                 boolean usernameEnteredForSignUp = false;
@@ -63,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(usernameEnteredForSignUp && passwordEnteredForSignUp) {
                     Intent page = new Intent(MainActivity.this, login.class);
+                    //db.addUser(usernameSignUpEditText, passwordSignUpEditText);
+
+
                     startActivity(page);
                 }
             }
@@ -83,19 +100,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        signUpPage();
-        signInPage();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-    }
 
     public boolean isEmpty(EditText et)
     {
