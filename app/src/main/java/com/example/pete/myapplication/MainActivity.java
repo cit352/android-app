@@ -14,34 +14,73 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 // For working with database
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import java.util.List;
 import com.example.pete.myapplication.business.*;
 import com.example.pete.myapplication.database.*;
 
+import static com.example.pete.myapplication.R.id.email_input;
+
 public class MainActivity extends AppCompatActivity {
 
-    public Button sign_in_tap;
+    private Button signUpButton;
+    private Button signInButton;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
 
-    public void signinpage() {
-        sign_in_tap = (Button) findViewById(R.id.sign_in_tap);
 
-        sign_in_tap.setOnClickListener(new View.OnClickListener() {
+    public void signUpPage() {
+        signUpButton = (Button) findViewById(R.id.sign_up_tap);
+
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-                Intent page = new Intent(MainActivity.this, login.class);
+                EditText usernameSignUpEditText = null;
+                EditText passwordSignUpEditText = null;
+                boolean usernameEnteredForSignUp = false;
+                boolean passwordEnteredForSignUp = false;
 
-                startActivity(page);
+                usernameSignUpEditText = (EditText) findViewById(R.id.email_input);
+                passwordSignUpEditText = (EditText) findViewById(R.id.pass_input);
+                if (isEmpty(usernameSignUpEditText)) {
+                    usernameSignUpEditText.setError("You must enter a username");
+                }
+                else
+                    usernameEnteredForSignUp = true;
 
+                if (isEmpty(passwordSignUpEditText)) {
+                    passwordSignUpEditText.setError("You must enter a password");
+                }
+                else
+                    passwordEnteredForSignUp = true;
+
+                if(usernameEnteredForSignUp && passwordEnteredForSignUp) {
+                    Intent page = new Intent(MainActivity.this, login.class);
+                    startActivity(page);
+                }
             }
         });
 
+    }
 
+    public void signInPage() {
+        signInButton = (Button) findViewById(R.id.sign_in_tap);
+
+        signInButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent page = new Intent(MainActivity.this, login.class);
+                startActivity(page);
+            }
+        });
     }
 
 
@@ -49,11 +88,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signinpage();
+
+        signUpPage();
+        signInPage();
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
+    public boolean isEmpty(EditText et)
+    {
+        String s = et.getText().toString();
+
+        if (s.matches(""))
+        {
+            return true;
+        }
+        return false;
+    }
+
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.

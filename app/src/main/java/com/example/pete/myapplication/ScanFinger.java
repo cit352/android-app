@@ -80,7 +80,8 @@ public class ScanFinger extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanfinger);
-
+    }
+/*
         keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
         fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
 
@@ -201,10 +202,10 @@ public class ScanFinger extends AppCompatActivity {
         }
     }
 
-    /**
+    *//**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+     *//*
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
                 .setName("ScanFinger Page") // TODO: Define a title for the content shown.
@@ -235,5 +236,5 @@ public class ScanFinger extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
-    }
+    }*/
 }
