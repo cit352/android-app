@@ -25,7 +25,7 @@ import static com.example.pete.myapplication.R.id.email_input;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button sign_in_tap;
+    public Button signUp;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
     private GoogleApiClient client;
 
     public void signinpage() {
-        sign_in_tap = (Button) findViewById(R.id.sign_up_tap);
+        signUp = (Button) findViewById(R.id.sign_up_tap);
 
-        sign_in_tap.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
