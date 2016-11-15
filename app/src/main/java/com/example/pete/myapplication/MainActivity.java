@@ -25,41 +25,43 @@ import static com.example.pete.myapplication.R.id.email_input;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button signUp;
+    private Button signUpButton;
+    private Button signInButton;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
 
-    public void signinpage() {
-        signUp = (Button) findViewById(R.id.sign_up_tap);
 
-        signUp.setOnClickListener(new View.OnClickListener() {
+    public void signUpPage() {
+        signUpButton = (Button) findViewById(R.id.sign_up_tap);
+
+        signUpButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                EditText usernameEditText = null;
-                EditText passwordEditText = null;
-                boolean usernameEntered = false;
-                boolean passwordEntered = false;
+                EditText usernameSignUpEditText = null;
+                EditText passwordSignUpEditText = null;
+                boolean usernameEnteredForSignUp = false;
+                boolean passwordEnteredForSignUp = false;
 
-                usernameEditText = (EditText) findViewById(R.id.email_input);
-                passwordEditText = (EditText) findViewById(R.id.pass_input);
-                if (isEmpty(usernameEditText)) {
-                    usernameEditText.setError("You must enter a username");
+                usernameSignUpEditText = (EditText) findViewById(R.id.email_input);
+                passwordSignUpEditText = (EditText) findViewById(R.id.pass_input);
+                if (isEmpty(usernameSignUpEditText)) {
+                    usernameSignUpEditText.setError("You must enter a username");
                 }
                 else
-                    usernameEntered = true;
+                    usernameEnteredForSignUp = true;
 
-                if (isEmpty(passwordEditText)) {
-                    passwordEditText.setError("You must enter a password");
+                if (isEmpty(passwordSignUpEditText)) {
+                    passwordSignUpEditText.setError("You must enter a password");
                 }
                 else
-                    passwordEntered = true;
+                    passwordEnteredForSignUp = true;
 
-                if(usernameEntered && passwordEntered) {
+                if(usernameEnteredForSignUp && passwordEnteredForSignUp) {
                     Intent page = new Intent(MainActivity.this, login.class);
                     startActivity(page);
                 }
@@ -68,14 +70,28 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void signInPage() {
+        signInButton = (Button) findViewById(R.id.sign_in_tap);
+
+        signInButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent page = new Intent(MainActivity.this, login.class);
+                startActivity(page);
+            }
+        });
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonSignUp = (Button) findViewById(R.id.sign_up_tap);
-        signinpage();
+        signUpPage();
+        signInPage();
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
