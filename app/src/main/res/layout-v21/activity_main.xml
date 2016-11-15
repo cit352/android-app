@@ -23,9 +23,10 @@
         android:textAppearance="@android:style/TextAppearance.Material.Display3"
         tools:ignore="HardcodedText"
         tools:textColor="@android:color/background_dark"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/font_size_large" />
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:textStyle="normal|bold" />
 
 
     <Button
@@ -57,10 +58,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/lastname"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="@dimen/font_size_medium"
+        android:textSize="22sp"
         android:layout_above="@+id/last_name_input"
         android:layout_alignRight="@+id/firstname"
-        android:layout_alignEnd="@+id/firstname" />
+        android:layout_alignEnd="@+id/firstname"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:text="First Name"
@@ -68,9 +70,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/firstname"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="@dimen/font_size_medium"
+        android:textSize="22sp"
         android:layout_above="@+id/first_name_input"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
 
     <Button
         android:text="@string/sign_in_tap"
@@ -80,8 +83,8 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
 
     <TextView
         android:text="Username"
@@ -90,22 +93,33 @@
         android:id="@+id/username"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:textSize="@dimen/font_size_medium"
+        android:textSize="22sp"
         android:layout_above="@+id/email_input"
         android:layout_alignLeft="@+id/pass"
-        android:layout_alignStart="@+id/pass" />
+        android:layout_alignStart="@+id/pass"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="22sp"
+        android:layout_above="@+id/pass_input"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/email_input"
+        android:id="@+id/first_name_input"
         tools:ignore="RtlHardcoded"
         android:textAlignment="center"
-        android:textSize="@dimen/font_size_medium"
-        android:layout_marginBottom="16dp"
-        android:layout_above="@+id/pass"
+        android:textSize="22sp"
+        android:layout_above="@+id/lastname"
         android:layout_alignLeft="@+id/last_name_input"
         android:layout_alignStart="@+id/last_name_input" />
 
@@ -117,21 +131,23 @@
         android:id="@+id/pass_input"
         tools:ignore="RtlHardcoded"
         android:textAlignment="center"
-        android:textSize="@dimen/font_size_medium"
-        android:layout_marginBottom="23dp"
+        android:textSize="22sp"
         android:layout_above="@+id/sign_up_tap"
         android:layout_alignLeft="@+id/email_input"
         android:layout_alignStart="@+id/email_input" />
 
-    <TextView
-        android:text="@string/password"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pass"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="@dimen/font_size_medium"
-        android:layout_above="@+id/pass_input"
-        android:layout_centerHorizontal="true" />
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_input"
+        tools:ignore="RtlHardcoded"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_above="@+id/pass"
+        android:layout_alignLeft="@+id/last_name_input"
+        android:layout_alignStart="@+id/last_name_input" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -141,21 +157,8 @@
         android:id="@+id/last_name_input"
         tools:ignore="RtlHardcoded"
         android:textAlignment="center"
-        android:textSize="@dimen/font_size_medium"
+        android:textSize="22sp"
         android:layout_above="@+id/username"
         android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/first_name_input"
-        tools:ignore="RtlHardcoded"
-        android:textAlignment="center"
-        android:textSize="@dimen/font_size_medium"
-        android:layout_above="@+id/lastname"
-        android:layout_alignLeft="@+id/last_name_input"
-        android:layout_alignStart="@+id/last_name_input" />
 
 </RelativeLayout>

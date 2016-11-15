@@ -1,13 +1,17 @@
 <resources>
     <string name="app_name">MyApplication</string>
-    <string name="password">Password</string>
-    <string name="sign_up">Sign Up!</string>
-    <string name="or">or</string>
-    <string name="button">Button</string>
-    <string name="sign_in_tap">SIGN IN</string>
-    <string name="create_an_account">Create an Account</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="or">or</string>
+    <string name="sign_in_tap">SIGN IN</string>
+    <string name="button">Button</string>
+    <string name="create_an_account">Create an Account</string>
+
     <string name="title_activity_unlockstart">Unlockstart</string>
-    <string name="swipe_your_finger_here">Swipe your finger here</string>
+    <string name="scan_your_finger_here">Scan your finger here</string>
+
 </resources>

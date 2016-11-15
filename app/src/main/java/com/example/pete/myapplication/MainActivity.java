@@ -33,36 +33,73 @@ public class MainActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        signUpPage();
+        signInPage();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+    }
 
     public void signUpPage() {
         signUpButton = (Button) findViewById(R.id.sign_up_tap);
+
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
+                //DBHandler db = new DBHandler(this);
+                EditText firstNameSignUpEditText = null;
+                EditText lastNameSignUpEditText = null;
                 EditText usernameSignUpEditText = null;
                 EditText passwordSignUpEditText = null;
+
+                boolean firstNameEnteredForSignUp = false;
+                boolean lastNameEnteredForSignUp = false;
                 boolean usernameEnteredForSignUp = false;
                 boolean passwordEnteredForSignUp = false;
 
+                firstNameSignUpEditText = (EditText) findViewById(R.id.first_name_input);
+                lastNameSignUpEditText = (EditText) findViewById(R.id.last_name_input);
                 usernameSignUpEditText = (EditText) findViewById(R.id.email_input);
                 passwordSignUpEditText = (EditText) findViewById(R.id.pass_input);
+
+                if (isEmpty(firstNameSignUpEditText)) {
+                    firstNameSignUpEditText.setError("You must enter your first name.");
+                }
+                else
+                    firstNameEnteredForSignUp = true;
+
+                if (isEmpty(lastNameSignUpEditText)) {
+                    lastNameSignUpEditText.setError("You must enter your last name.");
+                }
+                else
+                    lastNameEnteredForSignUp = true;
+
                 if (isEmpty(usernameSignUpEditText)) {
-                    usernameSignUpEditText.setError("You must enter a username");
+                    usernameSignUpEditText.setError("You must enter a username.");
                 }
                 else
                     usernameEnteredForSignUp = true;
 
                 if (isEmpty(passwordSignUpEditText)) {
-                    passwordSignUpEditText.setError("You must enter a password");
+                    passwordSignUpEditText.setError("You must enter a password.");
                 }
                 else
                     passwordEnteredForSignUp = true;
 
-                if(usernameEnteredForSignUp && passwordEnteredForSignUp) {
+                if(firstNameEnteredForSignUp && lastNameEnteredForSignUp &&
+                        usernameEnteredForSignUp && passwordEnteredForSignUp) {
                     Intent page = new Intent(MainActivity.this, login.class);
+                    //db.addUser(usernameSignUpEditText, passwordSignUpEditText);
+
                     startActivity(page);
                 }
             }
@@ -83,19 +120,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        signUpPage();
-        signInPage();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-    }
 
     public boolean isEmpty(EditText et)
     {
