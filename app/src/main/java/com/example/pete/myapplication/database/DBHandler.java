@@ -32,8 +32,7 @@ public class DBHandler extends SQLiteOpenHelper {
             KEY_USERNAME = "USER_USERNAME",
             KEY_PASSWORD = "USER_PASSWORD";
 
-
-    public DBHandler(View.OnClickListener context) {
+    public DBHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

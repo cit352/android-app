@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                DBHandler db = new DBHandler(this);
+                //DBHandler db = new DBHandler(this);
                 EditText firstNameSignUpEditText = null;
                 EditText lastNameSignUpEditText = null;
                 EditText usernameSignUpEditText = null;
@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 boolean usernameEnteredForSignUp = false;
                 boolean passwordEnteredForSignUp = false;
 
-                //firstNameSignUpEditText = (EditText) findViewById(R.id.first_name_input);
-                //lastNameSignUpEditText = (EditText) findViewById(R.id.last_name_input);
+                firstNameSignUpEditText = (EditText) findViewById(R.id.first_name_input);
+                lastNameSignUpEditText = (EditText) findViewById(R.id.last_name_input);
                 usernameSignUpEditText = (EditText) findViewById(R.id.email_input);
                 passwordSignUpEditText = (EditText) findViewById(R.id.pass_input);
 
