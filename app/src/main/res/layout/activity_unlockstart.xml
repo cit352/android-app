@@ -33,13 +33,11 @@
 
 
     <Button
-        android:text="Logout"
-        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/logout_tap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logout1"
+        android:id="@+id/logout_tap"
         android:textSize="20dp"
-
         android:background="@drawable/logout_shape"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:layout_alignParentBottom="true"
