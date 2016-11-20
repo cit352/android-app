@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import java.util.List;
 import com.example.pete.myapplication.business.*;
-import com.example.pete.myapplication.database.*;
+import com.example.pete.myapplication.database.DBHandler;
 
 import static com.example.pete.myapplication.R.id.email_input;
 

@@ -16,6 +16,7 @@ package com.example.pete.myapplication;
  **/
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.security.keystore.KeyProperties;
@@ -23,6 +24,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.KeyguardManager;
 import android.hardware.fingerprint.FingerprintManager;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -74,12 +77,28 @@ public class ScanFinger extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private Button logoutButton;
+
+    public void logout() {
+        logoutButton = (Button) findViewById(R.id.logout_tap);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent page = new Intent(ScanFinger.this, MainActivity.class);
+                startActivity(page);
+            }
+        });
+    }
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanfinger);
+
+        logout();
     }
 /*
         keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);

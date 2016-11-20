@@ -13,5 +13,6 @@
 
     <string name="title_activity_unlockstart">Unlockstart</string>
     <string name="scan_your_finger_here">Scan your finger here</string>
+    <string name="logout_tap">Logout</string>
 
 </resources>

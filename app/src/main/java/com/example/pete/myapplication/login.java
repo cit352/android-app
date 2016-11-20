@@ -1,5 +1,6 @@
 package com.example.pete.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Button;
 // For working with database
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.List;
 import com.example.pete.myapplication.business.*;
@@ -17,6 +19,7 @@ import com.example.pete.myapplication.database.*;
 public class login extends AppCompatActivity {
 
     public Button loginButton;
+    DBHandler dbHandler = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +58,39 @@ public class login extends AppCompatActivity {
                     passwordEnteredForLogin = true;
 
                 if(usernameEnteredForLogin && passwordEnteredForLogin) {
-                    Intent tin = new Intent(login.this, unlockstart.class);
-                    startActivity(tin);
+
+
+                    if(isRegistered(usernameLoginEditText.getText().toString(),
+                            passwordLoginEditText.getText().toString())) {
+                        Intent tin = new Intent(login.this, unlockstart.class);
+                        startActivity(tin);
+                    }
+                    else {
+                        Context context = getApplicationContext();
+                        CharSequence text = "No user with this username and password exists.";
+                        int duration = Toast.LENGTH_SHORT;
+
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+                    }
+
                 }
-                //DBHandler db = new DBHandler();
-                //db.onCreate();
-                //db.getUserInfo()';
             }
         });
 
 
+    }
+
+    private boolean isRegistered(String username, String password) {
+
+        User user = dbHandler.getUser(username, password);
+        dbHandler.getAllUsers();
+
+        if(user != null) {
+            return true;
+        }
+        else
+            return false;
     }
 
     public boolean isEmpty(EditText et)
