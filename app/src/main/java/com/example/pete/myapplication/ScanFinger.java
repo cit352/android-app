@@ -1,21 +1,29 @@
 package com.example.pete.myapplication;
 
 /**
- *  Credit for most of this code which we adadpted to our needs and
- *  the explaining how to use it goes to the tutorial at:
  *
+ *  FINGERPRINT SCANNING CODE:
+ *
+ *  Most of the code for fingerprint scanning came from a tutorial (see below). We made
+ *  minor modifications to it to work the way we wanted with our application.
+ *
+ *  Credit for most of code in this class pertaining to fingerprint scanning and
+ *  the explanation of how to use it goes to the tutorial at:
  *  http://www.techotopia.com/index.php/An_Android_Fingerprint_Authentication_Tutorial
  *
- *  based on the book:
+ *  Based on the book:
  *
  *  Android Studio 2.2
  *  Development Essentials
  *  Android 7 Edition
  *  eBook
  *
+ *
+ *
  **/
 
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -33,6 +41,15 @@ import android.support.v4.app.ActivityCompat;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyPermanentlyInvalidatedException;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.security.KeyStore;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.NoSuchAlgorithmException;
@@ -78,6 +95,15 @@ public class ScanFinger extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private Button logoutButton;
+    private Socket sock = null;
+
+    // Connection successful for testing with url: rlwise.ddns.net
+    // and port 8081
+    private static final int SERVER_PORT = 8081;
+    private static final String SERVER_IP = "jmullen.ddns.net";
+
+
+    private static ScanFinger parent = new ScanFinger();
 
     public void logout() {
         logoutButton = (Button) findViewById(R.id.logout_tap);
@@ -86,6 +112,7 @@ public class ScanFinger extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                closeConnection();
                 Intent page = new Intent(ScanFinger.this, MainActivity.class);
                 startActivity(page);
             }
@@ -98,7 +125,22 @@ public class ScanFinger extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanfinger);
 
+        setParent(parent);
         logout();
+        new Thread(new Client()).start();
+        String receivedInfo = "info received from server here";
+
+        if (sock != null){
+
+            try {
+                DataOutputStream outToServer = new DataOutputStream(sock.getOutputStream());
+                BufferedReader inFromServer = new BufferedReader(new InputStreamReader(sock.getInputStream()));
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                displayConnectionError();
+            }
+        }
     }
 /*
         keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
@@ -221,7 +263,9 @@ public class ScanFinger extends AppCompatActivity {
         }
     }
 
-    *//**
+    */
+
+    /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      *//*
@@ -256,4 +300,71 @@ public class ScanFinger extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }*/
+    // End fingerprint scanning code
+
+    public void setParent(ScanFinger parent) {
+        this.parent = parent;
+    }
+
+    public void displayConnectionError() {
+        parent.runOnUiThread(new Runnable() {
+            public void run() {
+                CharSequence text = "Could not start or unlock" +
+                        " vehicle. Unable to make connection to vehicle" +
+                        "over IP address/URL " + SERVER_IP + " and port " +
+                        SERVER_PORT;;
+                Context context = getApplicationContext();
+                System.out.println(text);
+                Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void displayConnectionSuccess() {
+        parent.runOnUiThread(new Runnable() {
+            public void run() {
+                CharSequence text = "Successfully connected to vehicle on "
+                        + " IP address/URL " + SERVER_IP + " and port " +
+                        SERVER_PORT;
+                Context context = getApplicationContext();
+                System.out.println(text);
+                Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void closeConnection() {
+        try {
+            if(sock !=null){
+                sock.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    class Client implements Runnable {
+        @Override
+        public void run() {
+
+            try {
+                InetAddress serverAddress = InetAddress.getByName(SERVER_IP);
+                sock = new Socket(serverAddress, SERVER_PORT);
+                displayConnectionSuccess();
+
+
+            } catch (UnknownHostException e) {
+                e.printStackTrace();
+                displayConnectionError();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+                displayConnectionError();
+
+            } catch(Exception e) {
+                e.printStackTrace();
+                displayConnectionError();
+            }
+        }
+    }
 }
