@@ -1,6 +1,8 @@
 package com.example.pete.myapplication;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button signUpButton;
     private Button signInButton;
+    DBHandler dbHandler = new DBHandler(this);
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -98,13 +101,47 @@ public class MainActivity extends AppCompatActivity {
                 if(firstNameEnteredForSignUp && lastNameEnteredForSignUp &&
                         usernameEnteredForSignUp && passwordEnteredForSignUp) {
                     Intent page = new Intent(MainActivity.this, login.class);
-                    //db.addUser(usernameSignUpEditText, passwordSignUpEditText);
+                    if (!duplicateUserExists(usernameSignUpEditText)) {
 
-                    startActivity(page);
+                        insertNewUser(usernameSignUpEditText, passwordSignUpEditText,
+                            firstNameSignUpEditText, lastNameSignUpEditText);
+                        startActivity(page);
+                    }
+                    else {
+                        usernameSignUpEditText.setError("A user with this username already exists. " +
+                                "Please enter a unique username");
+
+                    }
                 }
             }
         });
 
+    }
+
+    private void insertNewUser(EditText username, EditText password, EditText firstName,
+                              EditText lastName) {
+
+        User user = new User();
+
+        user.setUsername(username.getText().toString());
+        user.setPassword(password.getText().toString());
+        user.setFirstName(firstName.getText().toString());
+        user.setLastName(lastName.getText().toString());
+
+        dbHandler.addUser(user);
+
+    }
+
+    private boolean duplicateUserExists(EditText username) {
+
+        User user = dbHandler.getUser(username.getText().toString());
+        dbHandler.getAllUsers();
+
+        if(user != null) {
+            return true;
+        }
+        else
+            return false;
     }
 
     public void signInPage() {
